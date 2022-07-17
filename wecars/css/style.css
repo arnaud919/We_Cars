@@ -1,0 +1,418 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.header{
+    background: linear-gradient(#090909, #282323);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+
+/* menu responsive */
+
+.menu_responsive{
+    display: none;
+}
+
+input[type=checkbox]{
+    display: none;
+    width: 0;
+}
+
+.container_trait{
+    display: none;
+    width:100px;
+}
+
+.traits{
+    margin-bottom: 20px;
+    margin-top:2.770083102493075vh;
+    background-color: white;
+    height: 1px;
+    color:white;
+}
+
+.déroulé{
+    z-index:1;
+    color:white;
+    background-color: #C4C4C4;
+    display: none;
+}
+
+.déroulé_menu{
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin-left: 20%;
+}
+
+/* fin menu responsive */
+
+
+header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > *{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+span{
+    color: #73C0D7;
+}
+
+.couleur{
+    color: #73C0D7;
+
+}
+
+input{
+    height: 33px;
+    width: 150px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h3{
+    margin-bottom: 1%;
+}
+
+.bouton{
+    background: linear-gradient(180deg, #419FBB 0%, #237B97 100%);
+    border: none;
+    color: white;
+    width: 163px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Bannierre */
+
+.banniere{
+    background: url("../img/slider.jpg");
+    background-position: center;
+    height: 700px;
+    background-size: cover;
+}
+
+/* Gamme */
+
+/* gamme responsive */
+
+.form_responsive2{
+    display: none;
+}
+
+/* fin gamme responsive */
+
+.gamme_contenu{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.gamme_sous-titre{
+    font-size: 14px;
+}
+
+.game_sous-titre span{
+    color: #73C0D7;
+}
+
+.gamme_paragraphe{
+    width: 22vw;
+    margin-bottom: 60px;
+}
+
+.bouton_gamme{
+    color:white;
+    background: linear-gradient(180deg, #419FBB 0%, #237B97 100%);
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 330.36px;
+}
+
+/* Location */
+
+.location{
+    margin: 45px 8% 0;
+}
+
+.location_titre{
+    text-align: center;
+}
+
+.location_flex{
+    display: flex;
+}
+
+.location_flex_article{
+    max-width: 50%;
+    min-width: 50%;
+    width:50%;
+}
+
+.location_paragraphe{
+    margin:0 20px;
+}
+
+.location_sous-titre{
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+form.location_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form.location_form input{
+    width: 100%;
+    margin: 10px 0px;
+}
+
+form.location_form input::placeholder{
+    color: black;
+}
+
+.location_article2_margin{
+    margin-left: 20px;
+}
+
+.location_bouton{
+    margin-top:40px;
+}
+
+.location_bouton2{
+    margin-top:20px;
+}
+
+.location_bouton3{
+    margin-top:22px;
+}
+
+.p_bold{
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer{
+    background: linear-gradient(180deg, #090909 0%, #282323 100%);
+    display: flex;
+    justify-content: space-around;;
+    color:white;
+    margin-top: 50px;
+}
+
+.foooter_blocs{
+    margin: 50px 0;
+}
+
+.footer_blocs_text{
+    margin-bottom: 20px;
+}
+
+.footer_blocs_text2{
+    margin-bottom: 15px;
+}
+
+
+/* Responsive */
+@media screen and (max-width:1155px){
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        margin:0%;
+    }
+
+    .menu_responsive{
+        display: block;
+    }
+
+    nav > *{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    label:hover{
+        cursor: pointer;
+    }
+
+
+    .déroulé{
+        display:block;
+    }
+
+    button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container_trait{
+        display: block;
+    }
+
+    .form_responsive{
+        display: none;
+    }
+
+    .nav_responsive{
+        display: none;
+    }
+
+
+    .form_responsive2 input{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .form_responsive2 input::placeholder{
+        color:black;
+    }
+
+
+    .gamme_contenu{
+        flex-direction: column;
+    }
+
+    .gamme_contenu div{
+        padding-top: 20px;
+    }
+
+    .gamme_paragraphe{
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        text-align: center;
+        width: 41vw;
+    }
+
+    .form_responsive2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .location{
+        margin: 45px 0% 0;
+    }
+
+    .location > div.location_flex{
+        flex-direction: column;
+    }
+
+    article > div.location_flex{
+        flex-direction: column;
+    }
+
+    .location_flex_article{
+        min-width: 100%;
+        width:100%;
+    }
+
+    .location-img-responsive{
+        width: 100%;
+        height: auto;
+    }
+
+    .location_paragraphe{
+        margin-top: 20px;
+    }
+
+    .location_sous-titre{
+        margin-top: 40px;
+    }
+
+    .location_form{
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;
+    }
+
+    .location_form input{
+        height: 40px;
+    }
+
+    input + .bouton_gamme{
+        width: 100%;
+    }
+
+    article > h1{
+        text-align: center;
+    }
+
+    .p_bold{
+        text-align: end;
+        margin-top: 30px;
+    }
+
+    .témoin{
+        width: 90%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .vip{
+        display: none;
+    }
+
+    .img_vip{
+        margin-top: 30px;
+    }
+
+    div.location_article2_margin{
+        width:50%;
+        text-align: start;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .location_bouton3{
+        width: 90%;
+    }
+
+
+    footer{
+        flex-direction: column;
+    }
+
+    .foooter_blocs{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
